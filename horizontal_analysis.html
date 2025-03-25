@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бухгалтерский баланс</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/universal.css">
+</head>
+
+<body>
+    <header class="header container">
+        <a class="header__logo-wrap" href="index.html">
+            <img class="header__logo" src="images/logotip.png" alt="логотип" width="100">
+            <h1 class="header__title">Balance sheet</h1>
+        </a>
+        <nav>
+            <ul class="header__list">
+                <li class="header__item"><a class="header__item-link" href="account.html">Аккаунт</a> </li>
+                <li class="header__item"><a class="header__item-link" href="information.html">Информация</a> </li>
+                <li class="header__item"><a class="header__item-link" href="balance_sheet.html">Бух. баланс</a> </li>
+                <li class="header__item"><a class="header__item-link" href="vertical_analysis.html">Верт.анализ</a>
+                </li>
+                <li class="header__item"><a class="header__item-link" href="horizontal_analysis.html">Гор.анализ</a>
+                </li>
+            </ul>
+        </nav>
+            <a class="header__button" href="account.html">Вход/Регистрация</a>
+    </header>
+    <main>
+        <section class="section universal">
+
+            <h2 class="section__title">Горизонтальный анализ</h2>
+            <p class="section__discription">Горизонтальный анализ отчетности – это сравнительный анализ финансовых
+                данных за ряд периодов. Данный метод также известен под названием "трендовый анализ".
+
+                При горизонтальном анализе отчетности (например, баланса), берется показатель (строка) и прослеживается
+                его изменение в течение двух или более периодов. В качестве периодов могут браться любые одинаковые
+                временные интервалы, но обычно для бухгалтерской отчетности используют поквартальный анализ или анализ
+                данных по годам. Количество анализируемых периодов может варьировать в зависимости от конкретной задачи,
+                однако качественный анализ, как правило, возможен, когда в анализируемом ряду более 3-х периодов. </p>
+
+        </section>
+        <div class="section buh-form">
+            <form class="form buh-form" action="/submit" method="post">
+                <div class="input-container">
+                    <div class="input-label">
+                        Внеоборотные активы:
+                    </div>
+                    <div class="input-field">
+                        <input class="input-buh" type="text" placeholder="Введите данные">
+                    </div>
+                </div>
+                <div class="input-container">
+                    <div class="input-label">
+                        Оборотные активы:
+                    </div>
+                    <div class="input-field">
+                        <input class="input-buh" type="text" placeholder="Введите данные">
+                    </div>
+                </div>
+                <div class="input-container">
+                    <div class="input-label">
+                        Капитал и резервы:
+                    </div>
+                    <div class="input-field">
+                        <input class="input-buh" type="text" placeholder="Введите данные">
+                    </div>
+                </div>
+                <div class="input-container">
+                    <div class="input-label">
+                        Долгосрочные обязательства:
+                    </div>
+                    <div class="input-field">
+                        <input class="input-buh" type="text" placeholder="Введите данные">
+                    </div>
+                </div>
+                <div class="input-container">
+                    <div class="input-label">
+                        Краткосрочные обязательства:
+                    </div>
+                    <div class="input-field">
+                        <input class="input-buh" type="text" placeholder="Введите данные">
+                    </div>
+                </div>
+                <input class="form__button" type="submit" value="Отправить">
+            </form>
+        </div>
+        <section class="section tb">
+            <h2 class="tb__title">Итоговая таблица</h2>
+            <table class="tb">
+                <tr>
+                    <th>Статья баланса</th>
+                    <th>Значения за прошлый период</th>
+                    <th>Значения за текущий период</th>
+                    <th>Абсолютное изменение, тыс.руб.</th>
+                    <th>Относительное изменение, %</th>
+                </tr>
+                <tr>
+                    <td>Внеоборотные активы</td>
+                    <td>100</td>
+                    <td>32</td>
+                    <td>6</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Оборотные активы</td>
+                    <td>1200</td>
+                    <td>12</td>
+                    <td>9</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>Капитал и резервы</td>
+                    <td>3560</td>
+                    <td>34</td>
+                    <td>92</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Долгосрочные обязательства</td>
+                    <td>1300</td>
+                    <td>11</td>
+                    <td>79</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Краткосрочные обязательства</td>
+                    <td>350</td>
+                    <td>8</td>
+                    <td>17</td>
+                    <td>3</td>
+                </tr>
+            </table>
+        </section>
+        <section class="section card">
+            <h2 class="section__title">Визуализация полученных данных</h2>
+            <img class="card__icon" src="images/dinamic.png" alt="Структура актива" width="700" height="100">
+        </section>
+    </main>
+    <footer class="footer container">
+        <div class="footer__developers">
+            <p class="footer__dev">Соколова Наталия, Симонова Ирина, Овечкина Полина ЭК-21</p>
+            <p class="footer__dev">Контактная информация +7123456789</p>
+            <p class="footer__dev">Почта: balancesheet@gmail.com</p>
+        </div>
+        <p class="footer__politics">
+            <a class="footer__politics-link" href="policy.html"> Политика конфиденциальности</a>
+        </p>
+
+    </footer>
+</body>
+
+</html>
